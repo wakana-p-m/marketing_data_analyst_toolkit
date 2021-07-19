@@ -24,6 +24,9 @@ import scipy.stats as stats
 #Remove the Limit of the numbe of rows of DataFrames to display:
 pd.options.display.max_rows = 999
 
+#the decimal place to show
+pd.options.display.float_format = '{:,.2f}'.format
+
 # If Altair is installed:
 import altair as alt
 
