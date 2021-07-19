@@ -1,0 +1,29 @@
+
+"""
+TO USE THIS SET UP, 
+Run %run Jupyter_Setup_for_Data_Analysis.py
+This file has to be in the same directory as your working file
+Good luck!
+"""
+
+#set up inline plots in the notebook
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+#For larger, scalable figures by default:
+%config InlineBackend.figure_format = 'svg'
+import matplotlib
+matplotlib.rcParams['figure.figsize']=(10.0,6.0)
+
+#Import other useful librarites
+import pandas as pd
+import seaborn as sns
+import numpy as np
+import scipy.stats as stats
+
+#Remove the Limit of the numbe of rows of DataFrames to display:
+pd.options.display.max_rows = 999
+
+# If Altair is installed:
+import altair as alt
+
